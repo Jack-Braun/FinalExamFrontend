@@ -86,11 +86,20 @@ body {
     margin: 0 auto;
     border-radius: 5px;
     overflow: hidden;
+    align-items: center; 
   }
   
   .desc {
     height: 130px;
     padding: 10px;
+    flex: 1
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 10px; 
   }
   
   .desc h2 {

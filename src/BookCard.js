@@ -1,18 +1,20 @@
 const BookCard = ({ book }) => {
-
-    const handleDelete = async (id) => {
-        try {
-            const response = await fetch(`https://finalexambackend-3yei.onrender.com/api/${id}`, {
-                method: 'DELETE',
-            });
-            if(!response.ok) {
-                throw new Error('network response was not ok');
-            }
-            window.location.reload(); 
-        } catch(error) {
-            console.error('Error: ', error.message);
+  const handleDelete = async (id) => {
+    try {
+      const response = await fetch(
+        `https://finalexambackend-3yei.onrender.com/api/${id}`,
+        {
+          method: "DELETE",
         }
+      );
+      if (!response.ok) {
+        throw new Error("network response was not ok");
+      }
+      window.location.reload();
+    } catch (error) {
+      console.error("Error: ", error.message);
     }
+  };
 
   return (
     <div className="card-container">
@@ -28,7 +30,9 @@ const BookCard = ({ book }) => {
         <h3>{book.author}</h3>
         <p>{book.description}</p>
       </div>
+      <div className="button-container">
         <button onClick={() => handleDelete(book._id)}>X</button>
+      </div>
     </div>
   );
 };
