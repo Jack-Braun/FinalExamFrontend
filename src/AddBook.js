@@ -8,7 +8,7 @@ const AddBook = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await fetch('http://localhost:5000/api', {
+        const response = await fetch('https://finalexambackend-3yei.onrender.com/api', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -8,7 +8,7 @@ function BookList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api")
+      .get("https://finalexambackend-3yei.onrender.com/api")
       .then((res) => {
         setBooks(res.data);
       })

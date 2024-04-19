@@ -2,7 +2,7 @@ const BookCard = ({ book }) => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/${id}`, {
+            const response = await fetch(`https://finalexambackend-3yei.onrender.com/api/${id}`, {
                 method: 'DELETE',
             });
             if(!response.ok) {
