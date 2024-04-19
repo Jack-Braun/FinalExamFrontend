@@ -59,9 +59,85 @@ body {
       transform: rotate(360deg);
     }
   }
+
+  .btn.btn-info.float-left {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn.btn-info.float-left:hover {
+    background-color: #0056b3;
+  }
   
   .CreateBook {
-    min-height: 100vh;
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding: 20px; 
+  }
+  
+  .CreateBook .container {
+    max-width: 600px; 
+    width: 100%; 
+  }
+  
+  .CreateBook h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+  }
+  
+  .CreateBook p {
+    font-size: 1.2em;
+    margin-bottom: 20px; 
+  }
+  
+  .CreateBook form {
+
+  }
+  
+  .CreateBook .form-group {
+    margin-bottom: 20px; 
+  }
+  
+  .CreateBook input[type="text"] {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+  }
+  
+  .CreateBook input[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .CreateBook input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .col-md-11 .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .col-md-11 .btn:hover {
+    background-color: #0056b3;
   }
   
   .BookList {

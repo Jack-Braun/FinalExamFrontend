@@ -36,7 +36,7 @@ const AddBook = () => {
           <div class="col-md-8 m-auto">
             <br />
             <a class="btn btn-info float-left" href="/">
-              Show BooK List
+              Show Book List
             </a>
           </div>
           <div class="col-md-8 m-auto">
@@ -79,7 +79,7 @@ const AddBook = () => {
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </div>
-              <input type="submit" class="btn btn-info btn-block mt-4" />
+              <input type="submit" value="Submit" class="btn btn-info btn-block mt-4" />
             </form>
           </div>
         </div>
